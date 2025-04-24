@@ -160,4 +160,24 @@ You can then flip it around:
 
 js
 Copy
-const fullName = parts[1] + " " + parts[0]; // "Carl Becker"-->
+const fullName = parts[1] + " " + parts[0]; // "Carl Becker"
+
+
+
+----------------
+.some Reminder 
+
+Quick Reminder: What does .some() do?
+.some() goes through an array and returns:
+
+true → if at least one item matches a condition.
+
+false → if none of them match.
+
+So it’s perfect for a yes/no question like:
+
+“Is there anyone 18 or older?”
+
+
+
+-->
