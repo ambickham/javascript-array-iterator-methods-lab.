@@ -116,8 +116,7 @@ element => {
   // array: the whole array (optional)
 }
 
--->
-//amaharaj04232025-----Video review not homewokr
+<!--//amaharaj04232025-----Video review not homewokr
 // const names = 'Ashmeeta'
 // names.forEach(name => {
 //     console.log(`${names} is a great instructor')
@@ -141,5 +140,24 @@ element => {
 
 ## Assignment Lab, #1
 * Logic on track, filter() function helps to filter out specific values. 
-* If a const variable is already assigned in the file, I can't declare again. 
+* If a const variable is already assigned in the file, I can't declare again. -->
 
+-------------------
+
+<!-- Here's how .split() works (quick crash course):
+If you have:
+
+js
+Copy
+const name = "Becker, Carl";
+const parts = name.split(', ');
+Then parts becomes:
+
+js
+Copy
+["Becker", "Carl"]
+You can then flip it around:
+
+js
+Copy
+const fullName = parts[1] + " " + parts[0]; // "Carl Becker"-->

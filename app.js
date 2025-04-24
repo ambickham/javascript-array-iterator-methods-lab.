@@ -222,20 +222,86 @@ from an array of inventor objects
 - You have an array of objects, each representing an inventor with various 
   properties including their first name.
 - Utilize the Array.prototype.find() method to locate the object for the 
-  inventor with the first name 'Ada'.
-- Assign the found inventor object to the variable inventorNamedAda
+//   inventor with the first name 'Ada'.
+// - Assign the found inventor object to the variable inventorNamedAda
+// */
+
+// // let inventorNamedAda = {};
+
+// // Complete the exercise in the space below:
+// const inventorNamedAda = inventors.find(n => n.first === 'Ada');
+// // Check your work:
+// console.log('Exercise 4 my result: ', inventorNamedAda);
+// console.log('Exercise 4 correct result: ', {
+//   first: 'Ada',
+//   last: 'Lovelace',
+//   year: 1815,
+//   passed: 1852,
+// });
+// // Successfully completed exercise 4, used .find to find 'Ada'
+
+
+/*
+Exercise 5: Array.prototype.map()
+
+Use the Array.prototype.map() method to reformat each name in the 'people' 
+array. The goal is to convert names from "Last, First" format to "First Last" 
+format.
+
+Hint: Use the String.prototype.split() method to separate the first and last 
+      names. You can split the string using ', ' as the separator.
+      After splitting the names, rearrange them to the "First Last" format.
 */
 
-// let inventorNamedAda = {};
+// let firstLast = [];
 
 // Complete the exercise in the space below:
-const inventorNamedAda = inventors.find(n => n.first === 'Ada');
+const firstLast = people.map(name => {
+   const parts = name.split(', ');      // ['Last', 'First']
+   return parts[1] + ' ' + parts[0];     // 'First Last'
+ }); 
+
 // Check your work:
-console.log('Exercise 4 my result: ', inventorNamedAda);
-console.log('Exercise 4 correct result: ', {
-  first: 'Ada',
-  last: 'Lovelace',
-  year: 1815,
-  passed: 1852,
-});
-// Successfully completed exercise 4, used .find to find 'Ada'
+console.log('Exercise 5 my result: ', firstLast);
+console.log('Exercise 5 correct result: ', [
+  'Carl Becker',
+  'Samuel Beckett',
+  'Mick Beddoes',
+  'Henry Beecher',
+  'Ludwig Beethoven',
+  'Menachem Begin',
+  'Hilaire Belloc',
+  'Saul Bellow',
+  'Robert Benchley',
+  'Peter Benenson',
+  'David Ben-Gurion',
+  'Walter Benjamin',
+  'Tony Benn',
+  'Chester Bennington',
+  'Leana Benson',
+  'Silas Bent',
+  'Lloyd Bentsen',
+  'Ric Berger',
+  'Ingmar Bergman',
+  'Luciano Berio',
+  'Milton Berle',
+  'Irving Berlin',
+  'Eric Berne',
+  'Sandra Bernhard',
+  'Yogi Berra',
+  'Halle Berry',
+  'Wendell Berry',
+  'Erin Bethea',
+  'Aneurin Bevan',
+  'Ken Bevel',
+  'Joseph Biden',
+  'Ambrose Bierce',
+  'Steve Biko',
+  'Josh Billings',
+  'Frank Biondo',
+  'Augustine Birrell',
+  'Elk Black',
+  'Robert Blair',
+  'Tony Blair',
+  'William Blake',
+]);
