@@ -59,6 +59,12 @@ const sorted = nums.sort((a, b) => a - b); // [1, 2, 3]
 
 **Purpose:** Returns the first element that matches a condition.
 
+
+What does .find() do again?
+.find() goes through an array and gives you the first item that matches your condition. In this case, you want:
+
+The comment where id === 823423
+
 ```javascript
 const people = [{name: 'Ashmeeta'}, {name: 'Ben'}];
 const result = people.find(p => p.name === 'Ashmeeta'); // {name: 'Ashmeeta'}
