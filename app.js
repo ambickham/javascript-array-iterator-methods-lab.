@@ -158,31 +158,84 @@ Hint: Return a new object literal from the callback that looks like:
 /*
 Exercise 3: Array.prototype.sort()
 
-Sort the inventors by birth date in ascending order (from those born furthest in
-the past to those born most recently).
+// Sort the inventors by birth date in ascending order (from those born furthest in
+// the past to those born most recently).
+// */
+
+// // let sortedByBirthYear = [];
+
+// const sortedByBirthYear = inventors.sort((a,b) => a.year-b.year); 
+
+// // Complete the exercise in the space below:
+
+// // Check your work:
+// console.log('Exercise 3 my result: ', sortedByBirthYear);
+// console.log('Exercise 3 correct result: ', [
+//   { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
+//   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+//   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+//   { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
+//   { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
+//   { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 },
+//   { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
+//   { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
+//   { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
+//   { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
+//   { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
+//   { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
+// ]);
+
+// // Successfully printed exercise 3
+
+/* 
+Exercise 4: Array.prototype.find()
+
+Use Array.prototype.find() to identify the inventor with the first name 'Ada' 
+from an array of inventor objects
+
+- You have an array of objects, each representing an inventor with various 
+  properties including their first name.
+- Utilize the Array.prototype.find() method to locate the object for the 
+  inventor with the first name 'Ada'.
+- Assign the found inventor object to the variable inventorNamedAda
 */
 
-// let sortedByBirthYear = [];
+// let inventorNamedAda = {};
 
-const sortedByBirthYear = inventors.sort((a,b) => a.year-b.year); 
+// // Complete the exercise in the space below:
+
+// // Check your work:
+// console.log('Exercise 4 my result: ', inventorNamedAda);
+// console.log('Exercise 4 correct result: ', {
+//   first: 'Ada',
+//   last: 'Lovelace',
+//   year: 1815,
+//   passed: 1852,
+// });
+
+/* 
+Exercise 4: Array.prototype.find()
+
+Use Array.prototype.find() to identify the inventor with the first name 'Ada' 
+from an array of inventor objects
+
+- You have an array of objects, each representing an inventor with various 
+  properties including their first name.
+- Utilize the Array.prototype.find() method to locate the object for the 
+  inventor with the first name 'Ada'.
+- Assign the found inventor object to the variable inventorNamedAda
+*/
+
+// let inventorNamedAda = {};
 
 // Complete the exercise in the space below:
-
+const inventorNamedAda = inventors.find(n => n.first === 'Ada');
 // Check your work:
-console.log('Exercise 3 my result: ', sortedByBirthYear);
-console.log('Exercise 3 correct result: ', [
-  { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
-  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-  { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
-  { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
-  { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 },
-  { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
-  { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
-  { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
-  { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
-  { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
-  { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
-]);
-
-// Successfully printed exercise 3
+console.log('Exercise 4 my result: ', inventorNamedAda);
+console.log('Exercise 4 correct result: ', {
+  first: 'Ada',
+  last: 'Lovelace',
+  year: 1815,
+  passed: 1852,
+});
+// Successfully completed exercise 4, used .find to find 'Ada'
