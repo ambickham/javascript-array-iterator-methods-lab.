@@ -103,13 +103,55 @@ born in the 1500's.
 
 // Complete the exercise in the space below:
 
- const veryOldInventors = inventors.filter(n => n.year >= 1500 && n.year <1600);
+//  const veryOldInventors = inventors.filter(n => n.year >= 1500 && n.year <1600);
 
-// Check your work:
-console.log('Exercise 1 my result: ', veryOldInventors);
-console.log('Exercise 1 correct result: ', [
- { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
- { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-]);
+// // Check your work:
+// console.log('Exercise 1 my result: ', veryOldInventors);
+// console.log('Exercise 1 correct result: ', [
+//  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+//  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+// ]);
 
 //Successfully printed as expected above
+//-----amaharaj_END-------//
+
+/*
+Exercise 2: Array.prototype.map()
+
+Map the array of inventors into a new array. This new array should only contain
+objects with the inventors' first and last names.
+
+- For each inventor, return an object in this format: 
+  { first: "First Name", last: "Last Name" }.
+- The new array should be a collection of these objects, each representing an 
+  inventor with only their first and last names.
+
+Hint: Return a new object literal from the callback that looks like:
+      { first: "First Name", last: "Last Name" }
+*/
+
+
+//let inventorNames = [];
+
+
+// Complete the exercise in the space below:
+
+const inventorNames = inventors.map(n =>n.first + ''+ n.last);
+
+// Check your work:
+console.log('Exercise 2 my result: ', inventorNames);
+console.log('Exercise 2 correct result: ', [
+  { first: 'Albert', last: 'Einstein' },
+  { first: 'Isaac', last: 'Newton' },
+  { first: 'Galileo', last: 'Galilei' },
+  { first: 'Marie', last: 'Curie' },
+  { first: 'Johannes', last: 'Kepler' },
+  { first: 'Nicolaus', last: 'Copernicus' },
+  { first: 'Max', last: 'Planck' },
+  { first: 'Katherine', last: 'Blodgett' },
+  { first: 'Ada', last: 'Lovelace' },
+  { first: 'Sarah E.', last: 'Goode' },
+  { first: 'Lise', last: 'Meitner' },
+  { first: 'Hanna', last: 'Hammarström' },
+]);
+
